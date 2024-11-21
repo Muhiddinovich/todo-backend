@@ -16,7 +16,7 @@ public class TodoResource {
 	}
 
 
-	@GetMapping("/user/{username}/todos")
+	@GetMapping("/users/{username}/todos")
 	public List<Todo> retrieveTodos(@PathVariable String username) {
 		return todoService.findByUsername(username);
 	}
