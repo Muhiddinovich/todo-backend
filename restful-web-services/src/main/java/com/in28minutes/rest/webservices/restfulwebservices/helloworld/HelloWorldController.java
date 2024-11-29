@@ -11,6 +11,11 @@ public class HelloWorldController {
 //	@CrossOrigin(origins = "http://localhost:3000", allowCredentials = "true")
 	//Applies CORS settings only to specific methods or controllers where the annotation is used.
 
+	@GetMapping(path = "/basicauth")
+	public String basicAuthCheck() {
+		return "Success"; 
+	}
+	
 	@GetMapping(path = "/hello-world")
 	public String helloWorld() {
 		return "Hello World v2"; 
